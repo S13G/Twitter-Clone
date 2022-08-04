@@ -1,9 +1,120 @@
 .twitter-background {
     display: flex;
+    position: relative;
     width: 100%;
 }
 
 .left-side-cover {
-    width: 50%;
-    background: image("assets/l");
+    display: flex;
+    width: 55%;
+    height: 47pc;
+    overflow: hidden;
+    background: url(".././assets/login.png") lightblue;
+    align-items: center;
+    justify-content: center;
+}
+
+#bird-background {
+    position: absolute;
+    height: 300px;
+}
+
+.right-side-cover {
+    display: inherit;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0 40px 40px;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+#happening {
+    font-size: 4.5em;
+}
+
+#join {
+    font-size: 2em;
+}
+
+.entire-cover {
+    display: inherit;
+    width: 300px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.google-cover,
+.twitter-cover,
+.phone-number,
+.sign-in-cover {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(207, 217, 222);
+    border-radius: 30px;
+    padding: 7px;
+    gap: 5px;
+}
+
+.google-cover p,
+.twitter-cover p,
+.phone-number p,
+.sign-in-cover p {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#google-logo, #apple-logo {
+    height: 20px;
+}
+
+#sign {
+    color: rgb(67, 77, 82);
+    font-size: 11px;
+}
+
+#or {
+    align-self: center;
+}
+
+.phone-number {
+    color: white;
+    background-color: rgb(29, 155, 240);
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+}
+
+h3 {
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#sign-in {
+    color: rgb(29, 155, 240);
+}
+
+.lists-cover ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    color: rgb(67, 77, 82);
+    text-decoration: none;
+    font-size: 0.8em;
+
 }
