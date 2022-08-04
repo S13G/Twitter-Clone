@@ -1,0 +1,9 @@
+.twitter-background {
+    display: flex;
+    width: 100%;
+}
+
+.left-side-cover {
+    width: 50%;
+    background: image("assets/l");
+}
