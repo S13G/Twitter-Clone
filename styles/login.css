@@ -61,6 +61,14 @@
     gap: 5px;
 }
 
+.google-cover:hover,
+.twitter-cover:hover,
+.phone-number:hover,
+.sign-in-cover:hover,
+.links:hover {
+    cursor: pointer;
+}
+
 .google-cover p,
 .twitter-cover p,
 .phone-number p,
