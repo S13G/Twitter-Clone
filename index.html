@@ -7,10 +7,14 @@
     <link href="styles/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
     <link href="styles/login.css" rel="stylesheet">
     <link href="styles/general.css" rel="stylesheet">
-    <script src="styles/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="styles/app.js"></script>
+    <script>
+
+    </script>
 </head>
 <body>
-<main>
+<main class="main">
     <div class="twitter-background">
         <div class="left-side-cover">
             <img alt="twitter-image" id="bird-background" src="assets/white-twit.webp">
@@ -39,7 +43,7 @@
                 <h3>Already have an account?</h3>
 
                 <div class="sign-in-cover">
-                    <a href="login.html"><p id="sign-in">Sign in</p></a>
+                    <p class="sign-in">Sign in</p>
                 </div>
             </div>
         </div>
@@ -69,5 +73,44 @@
 </main>
 
 <div class="overlay"></div>
+
+<div class="entire-cover-login">
+    <div class="x">
+        <i class="fa-solid fa-x fa-lg"></i>
+    </div>
+    <div id="logo-cover-login">
+        <img alt="logo" id="logo-twit" src="assets/twitter.webp">
+    </div>
+    <div id="text-cover-login">
+        <h3 id="text">Sign in to Twitter</h3>
+    </div>
+    <div class="google-cover-login">
+        <img alt="google" id="google-logo-g" src="assets/google.webp">
+        <p>Continue with Google</p>
+    </div>
+    <div class="twitter-cover-login">
+        <img alt="apple" id="apple-logo-g" src="assets/apple.webp">
+        <p>Continue with Apple</p>
+    </div>
+    <div class="or-cover-login">
+        <hr class="line-login">
+        <p id="or-text">or</p>
+        <hr class="line-login">
+    </div>
+    <div class="info-cover-login">
+        <label for="info-login">
+            <input id="info-login" placeholder="Phone, email address or username" type="text">
+        </label>
+    </div>
+    <div class="next-cover-login">
+        <p>Next</p>
+    </div>
+    <div class="forgot-password-login">
+        <p>Forgot password?</p>
+    </div>
+    <div class="signup-login">
+        <p id="dont">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+</div>
 </body>
 </html>

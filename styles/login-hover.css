@@ -2,16 +2,16 @@ body {
     background: white !important;
 }
 
-.google-cover:hover,
-.twitter-cover:hover,
+.google-cover-login:hover,
+.twitter-cover-login:hover,
 .fa-x:hover,
-.next-cover:hover,
+.next-cover-login:hover,
 .forgot-password,
 #up:hover {
     cursor: pointer;
 }
 
-.entire-cover {
+.entire-cover-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
     margin-top: 20px;
 }
 
-#logo-cover {
+#logo-cover-login {
     display: inherit;
     flex-direction: row;
     max-width: 100px;
@@ -35,14 +35,14 @@ body {
     opacity: 0.5;
 }
 
-#logo {
+#logo-twit {
     margin-top: -35px;
     height: 30px;
     flex: 1;
     margin-bottom: 90px;
 }
 
-#text-cover {
+#text-cover-login {
     margin-left: -95px;
     margin-bottom: 15px;
 }
@@ -51,10 +51,10 @@ body {
     font-size: 1.6em;
 }
 
-.google-cover,
-.twitter-cover,
-.next-cover,
-.forgot-password {
+.google-cover-login,
+.twitter-cover-login,
+.next-cover-login,
+.forgot-password-login {
     display: flex;
     width: 300px;
     justify-content: center;
@@ -65,11 +65,12 @@ body {
     gap: 5px;
 }
 
-.google-cover {
+.google-cover-login {
     color: gray;
 }
 
-.next-cover, .forgot-password {
+.next-cover-login,
+.forgot-password-login {
     background-color: black;
     color: white;
     margin-bottom: 7px;
@@ -80,36 +81,37 @@ body {
     padding-top: 10px;
 }
 
-.forgot-password {
+.forgot-password-login {
     color: black;
     background-color: white;
 }
 
-.google-cover p,
-.twitter-cover p {
+.google-cover-login p,
+.twitter-cover-login p {
     margin-top: 5px;
     font-weight: bold;
     font-size: 14px;
 }
 
-#google-logo, #apple-logo {
+#google-logo-g,
+#apple-logo-g {
     height: 18px;
 }
 
-.or-cover {
+.or-cover-login {
     display: inherit;
     align-items: center;
     gap: 5px;
     margin-top: -8px;
 }
 
-.line {
+.line-login {
     border-top: 1px solid rgb(30, 30, 30);
     opacity: 0.2;
     width: 135px;
 }
 
-#info {
+#info-login {
     padding: 20px 10px;
     width: 300px;
     height: auto;
@@ -117,12 +119,12 @@ body {
     border-radius: 5px;
 }
 
-#info::placeholder {
+#info-login::placeholder {
     color: gray;
     font-size: 17px;
 }
 
-.signup {
+.signup-login {
     margin-left: -90px;
     margin-top: 30px;
     font-size: 15px;
