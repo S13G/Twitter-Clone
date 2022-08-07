@@ -2,6 +2,15 @@ body {
     background: white !important;
 }
 
+.google-cover:hover,
+.twitter-cover:hover,
+.fa-x:hover,
+.next-cover:hover,
+.forgot-password,
+#up:hover {
+    cursor: pointer;
+}
+
 .entire-cover {
     display: flex;
     flex-direction: column;
@@ -21,6 +30,7 @@ body {
 .x {
     display: inherit;
     align-self: start;
+    flex: 1;
     margin: 5px 0 0 15px;
     opacity: 0.5;
 }
@@ -28,6 +38,7 @@ body {
 #logo {
     margin-top: -35px;
     height: 30px;
+    flex: 1;
     margin-bottom: 90px;
 }
 
@@ -72,11 +83,6 @@ body {
 .forgot-password {
     color: black;
     background-color: white;
-}
-
-.google-cover:hover,
-.twitter-cover:hover {
-    cursor: pointer;
 }
 
 .google-cover p,
@@ -124,9 +130,17 @@ body {
 
 a:-webkit-any-link {
     text-decoration: none;
-     color: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
 }
 
 #dont {
     color: gray;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 20%;
+    background-color: gray;
+    z-index: 1;
 }
