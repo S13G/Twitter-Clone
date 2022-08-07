@@ -4,25 +4,40 @@ const entireCover = document.querySelector(".entire-cover-login");
 const overlay = document.querySelector(".overlay");
 
 const toggle = function () {
-    entireCover.classList.toggle("show")
     overlay.classList.toggle("show")
 
     // when modal is shown, page body is fixed
     document.body.style.position = "fixed";
     document.body.style.top = `-${window.scrollY}px`;
 
+
+    entireCover.style.opacity = 0;
+    entireCover.style.display = "flex";
+    (function fade() {
+        let val = parseFloat(entireCover.style.opacity);
+        if (!((val += .1) > 1)) {
+            entireCover.style.opacity = val;
+            requestAnimationFrame(fade);
+        }
+    })();
+};
+
+const closeModal = function () {
+    overlay.classList.toggle("show")
+
+    // when modal is shown, page body is fixed
+    document.body.style.position = "relative";
+
+    entireCover.style.opacity = 1;
+    (function fade() {
+        if ((entireCover.style.opacity -= .1) < 0) {
+            entireCover.style.display = "none";
+        } else {
+            requestAnimationFrame(fade);
+        }
+    })();
 };
 
 signIn.addEventListener("click", toggle);
-close.addEventListener("click", toggle);
-
-
-const scroll = function () {
-    entireCover.classList.toggle("close")
-    // when modal is hidden, page body starts to scroll
-    const scrollY = document.body.style.top;
-    document.body.style.position = '';
-    document.body.style.top = '';
-    window.scrollTo(0, parseInt(scrollY || '0') * -1);
-}
+close.addEventListener("click", closeModal);
 
