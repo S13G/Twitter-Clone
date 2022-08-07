@@ -111,6 +111,10 @@ h3 {
     color: rgb(29, 155, 240);
 }
 
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 .lists-cover ul {
     display: flex;
     flex-wrap: wrap;
