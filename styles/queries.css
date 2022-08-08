@@ -1,0 +1,46 @@
+@media (max-width: 1000px) {
+    .twitter-background {
+        flex: 1;
+    }
+
+    .left-side-cover {
+        position: absolute;
+        top: 103%;
+        height: 15pc;
+        width: 100%;
+    }
+
+    #happening {
+        display: inherit;
+        font-size: 3.5em;
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    #join {
+        font-size: 1.5em;
+    }
+
+    .right-side-cover {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+
+    #bird-background {
+        height: 150px;
+    }
+
+    .lists-cover ul {
+        flex-grow: 1;
+        gap: 10px;
+        padding: 10px 30px 10px 10px;
+        margin-top: 260px;
+    }
+
+    .entire-cover-login {
+        left: 0;
+        width: 100%;
+    }
+}
