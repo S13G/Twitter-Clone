@@ -266,6 +266,10 @@ li a {
     font-size: 17px;
 }
 
+#info-login:focus {
+    font-size: 20px;
+}
+
 .signup-login {
     margin-left: -90px;
     margin-top: 20px;

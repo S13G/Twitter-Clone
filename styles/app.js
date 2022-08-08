@@ -29,6 +29,7 @@ const closeModal = function () {
 
     entireCover.style.opacity = 4;
     overlay.style.opacity = 1;
+
     (function fade() {
         if ((entireCover.style.opacity -= .1) < 0 && (overlay.style.opacity -= .1) < 0) {
             entireCover.style.display = "none";
